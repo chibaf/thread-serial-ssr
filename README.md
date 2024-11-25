@@ -15,4 +15,9 @@ main program calling ssr_sw_class2.py and cross_corr_via_serial_2_class.py
 ## logger_simulator_01.ino
 logger simulator
 
+## references
+threading --- スレッドベースの並列処理 — Python 3.13.0 ドキュメント
+https://docs.python.org/ja/3.13/library/threading.html
 
+queue --- 同期キュークラス — Python 3.13.0 ドキュメント
+https://docs.python.org/ja/3/library/queue.html
