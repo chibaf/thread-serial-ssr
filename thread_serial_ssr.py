@@ -16,12 +16,12 @@ for i in range(0,len(gpio)):
   th.append("")
 for i in range(0,len(gpio)):
   qu[i].put(0)
-qs.put(1)
+qs.put(-1)
 #
 ssrs=[]
 for i in range(0,len(gpio)):
   ssrs.append(ssr_sw(gpio[i]))
-x=0
+x=0/Volumes/pi's home/ssr_sw_class2.py
 #
 while True:
   try:
@@ -34,15 +34,14 @@ while True:
           t_off=random.randrange(1,5,1)
           th[i]=threading.Thread(target=ssrs[i].run,args=(t_on,t_off,qu[i]),daemon=True)
           th[i].start()
-#        else:
-#          qu[i].put(1)
         ret=qs.get()
         if ret!=0:
           ccs=cross_corr_serial("/dev/ttyACM0",19200)
           ths=threading.Thread(target=ccs.cross_corr,args=(x,qs),daemon=True)
           ths.start()
           qs.put(0)
-          print(ret)
+          if ret>=0:
+            print(ret)
         else:
           qs.put(0)
     else:
