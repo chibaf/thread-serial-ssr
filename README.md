@@ -20,8 +20,8 @@ logger simulator
 ![image](https://github.com/user-attachments/assets/02bf1b21-be41-47a1-9942-726dceb690a4)
 
 ## references
-threading --- スレッドベースの並列処理 — Python 3.13.0 ドキュメント
-https://docs.python.org/ja/3.13/library/threading.html
+threading — Thread-based parallelism — Python 3.13.0 documentation
+[https://docs.python.org/ja/3.13/library/threading.html](https://docs.python.org/3/library/threading.html)
 
-queue --- 同期キュークラス — Python 3.13.0 ドキュメント
-https://docs.python.org/ja/3/library/queue.html
+queue — A synchronized queue class — Python 3.13.0 documentation
+[https://docs.python.org/ja/3/library/queue.html](https://docs.python.org/3/library/queue.html)
