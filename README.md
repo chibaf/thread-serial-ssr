@@ -9,6 +9,8 @@ find index of max value of array called from cross_corr_via_serial_2_class.py
 ## ssr_sw_class2.py
 thread: switching GPIO
 
+GPIO: 11,12,13,15,16,18
+
 ## thread_serial_ssr.py
 main program calling ssr_sw_class2.py and cross_corr_via_serial_2_class.py
 
