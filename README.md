@@ -15,6 +15,8 @@ main program calling ssr_sw_class2.py and cross_corr_via_serial_2_class.py
 ## logger_simulator_01.ino
 logger simulator
 
+![image](https://github.com/user-attachments/assets/02bf1b21-be41-47a1-9942-726dceb690a4)
+
 ## references
 threading --- スレッドベースの並列処理 — Python 3.13.0 ドキュメント
 https://docs.python.org/ja/3.13/library/threading.html
