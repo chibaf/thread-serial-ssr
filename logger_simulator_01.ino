@@ -20,9 +20,9 @@ void loop() {
   mtime=millis();
   Serial.print(mtime);
   Serial.print(",");
-  Serial.print(sin(2.0*pi*float(j1)/50));
+  Serial.print(sin(2.0*pi*float(j1)/100.));
   Serial.print(",");
-  Serial.print(cos(2.0*pi*float(j2)/50));
+  Serial.print(cos(2.0*pi*float(j2)/100.));
   Serial.print(",");
   Serial.print("0.0");
   Serial.print(",");
