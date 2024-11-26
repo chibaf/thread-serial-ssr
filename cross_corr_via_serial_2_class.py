@@ -22,16 +22,14 @@ class cross_corr_serial():
         d2=np.append(d2,np.float32(data[2]))
         i=i+1
       else:
-        if len(d1)!=0:
-          c=1.0/(np.linalg.norm(d1)*np.linalg.norm(d2)) 
-          f1=np.fft.fft(d1)
-          f2=np.conjugate(np.fft.fft(d2))
-          ff=f1*f2
-          corrf=np.real(np.fft.ifft(ff))*c
-          ix=index_sub.find_index(corrf)
-          break
+        c=1.0/(np.linalg.norm(d1)*np.linalg.norm(d2)) 
+        f1=np.fft.fft(d1)
+        f2=np.conjugate(np.fft.fft(d2))
+        ff=f1*f2
+        corrf=np.real(np.fft.ifft(ff))*c
+        ix=index_sub.find_index(corrf)
+        break
     self.ser.close()
-#    x=0
     q.put(ix)
     
     def close(self):
