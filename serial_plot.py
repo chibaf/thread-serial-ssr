@@ -18,9 +18,10 @@ while True:
     y1.pop(100)
     y2.pop(100)
     clf()
-    ylim(-10,10)
-    plot(x,y1)
-    plot(x,y2)
+    ylim(-1.5,1.5)
+    line1,=plot(x,y1,label='Ts 1')
+    line2,=plot(x,y2,label='Ts 2')
+    legend(handles=[line1, line2])
     pause(0.05)
   except KeyboardInterrupt:
     ser.close()
